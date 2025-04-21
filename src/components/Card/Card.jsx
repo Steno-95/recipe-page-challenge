@@ -1,5 +1,6 @@
 import CardPicture from "./CardPicture";
 import Section from "../../ui/Section";
+import Table from "../Table/Table";
 const preparation = [
   {
     title: "Total",
@@ -58,37 +59,61 @@ const instructions = [
   },
 ];
 
+const table = [
+  {
+    tag: "Calories",
+    value: "277kcal",
+  },
+  {
+    tag: "Carbs",
+    value: "0g",
+  },
+  {
+    tag: "Protein",
+    value: "20g",
+  },
+  {
+    tag: "Fat",
+    value: "22g",
+  },
+];
+
 function Card() {
   return (
-    <main className="bg-[var(--card-bg)] p-4 max-w-[700px] rounded-2xl">
-      <CardPicture img={"/images/image-omelette.jpeg"} />
-      <h1 className="text-[2rem] py-2 text-[var(--title-color)]">
-        Simple Omelette Recipe
-      </h1>
-      <p>
-        An easy and quick dish, perfect for any meal. This classic omelette
-        combines beaten eggs cooked to perfection, optionally filled with your
-        choice of cheese, vegetables, or meats.
-      </p>
-      <Section
-        bg={true}
-        title={"Preparation time"}
-        content={preparation}
-      ></Section>
-      <Section title={"Ingredients"} content={ingredients}></Section>
-      <Section
-        title={"Instructions"}
-        content={instructions}
-        type="list-decimal! marker:font-bold"
-      ></Section>
+    <main className="bg-[var(--card-bg)] max-w-[700px] rounded-2xl">
+      <div className="md:pt-6 md:px-6">
+        <CardPicture img={"/images/image-omelette.jpeg"} />
+      </div>
+      <div className="px-6 pb-6">
+        <h1 className="text-[2rem] py-2 text-[var(--title-color)]">
+          Simple Omelette Recipe
+        </h1>
+        <p>
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
+        <Section
+          bg={true}
+          title={"Preparation time"}
+          content={preparation}
+        ></Section>
+        <Section title={"Ingredients"} content={ingredients}></Section>
+        <Section
+          title={"Instructions"}
+          content={instructions}
+          type="list-decimal! marker:font-bold"
+        ></Section>
+        <Table
+          title={"Nutrition"}
+          description={
+            "The table   below shows nutritional values per serving without the additional fillings."
+          }
+          content={table}
+        />
+      </div>
     </main>
   );
 }
 
 export default Card;
-/*     
-    
-    Nutrition The table
-    below shows nutritional values per serving without the additional fillings.
-    Calories 277kcal Carbs 0g Protein 20g Fat 22g
-*/
