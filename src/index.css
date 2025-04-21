@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Outfit", sans-serif;
+  --main-bg: hsl(30, 54%, 90%);
+  --card-bg: hsl(0, 0%, 100%);
+
+  --border-color: hsl(30, 18%, 87%);
+
+  --text-color: hsl(30, 10%, 34%);
+  --text-dark: hsl(14, 45%, 36%);
+
+  --title-color: hsl(24, 5%, 18%);
+  --ingredient-bg: hsl(330, 100%, 98%);
+  --ingredient-title: hsl(332, 51%, 32%);
+}
+
+body {
+  font-size: calc(0.5em + 1vmin);
+  background-color: var(--main-bg);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Young Serif", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+}
