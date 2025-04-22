@@ -15,8 +15,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![Desktop](./public/images/Screenshot Desktop Frontend Mentor Recipe page.png)
-![Mobile](./public/images/Screenshot Mobile Frontend Mentor Recipe page.png)
+![Desktop](./public/images/Screenshot%20Desktop%20Frontend%20Mentor%20Recipe%20page.png)
+![Mobile](./public/images/Screenshot%20Mobile%20Frontend%20Mentor%20Recipe%20page.png)
 
 ### Links
 
