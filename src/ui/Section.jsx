@@ -3,7 +3,6 @@ import ListElement from "./ListElement";
 import SubTitle from "./SubTitle";
 
 function Section({ bg = false, title, content, type = "list-disc!" }) {
-  console.log(type);
   return (
     <section
       className={

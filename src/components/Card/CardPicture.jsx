@@ -1,6 +1,6 @@
 function CardPicture({ img }) {
   return (
-    <div className="max-w-full md:rounded-xl md:max-w-[600] md:overflow-hidden">
+    <div className="max-w-fit md:rounded-xl md:max-w-[700px] md:overflow-hidden">
       <img
         src={img}
         alt="image of the result of the recipe"
