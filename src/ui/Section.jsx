@@ -4,11 +4,11 @@ import SubTitle from "./SubTitle";
 
 function Section({ bg = false, title, content, type = "list-disc!" }) {
   return (
-    <section
+    <article
       className={
         bg
-          ? "bg-[var(--ingredient-bg)] p-5 rounded-2xl mt-5"
-          : "not-last:border-b-1 py-4 border-[var(--border-color)]"
+          ? "bg-(--ingredient-bg) p-5 rounded-2xl mt-5"
+          : "not-last:border-b-1 py-4 border-(--border-color)"
       }
     >
       <SectionTitle color={bg}>{title}</SectionTitle>
@@ -16,7 +16,7 @@ function Section({ bg = false, title, content, type = "list-disc!" }) {
         className={
           type +
           " list-outside " +
-          `${bg ? "text-[var(--ingredient-title)]" : "text-[var(--text-dark)]"}`
+          `${bg ? "text-(--ingredient-title)" : "text-(--text-dark)"}`
         }
       >
         {content.map((item, i) => (
@@ -25,7 +25,7 @@ function Section({ bg = false, title, content, type = "list-disc!" }) {
           </ListElement>
         ))}
       </ul>
-    </section>
+    </article>
   );
 }
 

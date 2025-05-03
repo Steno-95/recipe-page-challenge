@@ -1,6 +1,6 @@
 function SubTitle({ children }) {
   return (
-    <span className=" font-semibold text-[1rem] text-[var(--text-color)]">
+    <span className=" font-semibold text-[1rem] text-(--text-color)">
       {children}:
     </span>
   );

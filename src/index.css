@@ -15,21 +15,23 @@
   --ingredient-title: hsl(332, 51%, 32%);
 }
 
-body {
-  font-size: calc(0.5em + 1vmin);
-  background-color: var(--main-bg);
-  color: var(--text-color);
-}
+@layer {
+  body {
+    font-size: calc(0.5em + 1vmin);
+    background-color: var(--main-bg);
+    color: var(--text-color);
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Young Serif", sans-serif;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Young Serif", sans-serif;
+  }
 
-p {
-  font-size: 1rem;
+  p {
+    font-size: 1rem;
+  }
 }

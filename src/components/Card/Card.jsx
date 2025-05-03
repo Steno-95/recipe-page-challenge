@@ -1,90 +1,17 @@
 import CardPicture from "./CardPicture";
 import Section from "../../ui/Section";
 import Table from "../Table/Table";
-const preparation = [
-  {
-    title: "Total",
-    description: "Approximately 10 minutes",
-  },
-  {
-    title: "Preparation",
-    description: "5 minutes",
-  },
-  {
-    title: "Cooking",
-    description: "5 minutes",
-  },
-];
-
-const ingredients = [
-  { description: "2-3 large eggs" },
-  { description: "Salt, to taste" },
-  { description: "Pepper, to taste" },
-  { description: "1 tablespoon of butter or oil" },
-  {
-    description:
-      "Optional fillings: cheese, diced vegetables, cooked meats,    herbs",
-  },
-];
-
-const instructions = [
-  {
-    title: "Beat the eggs",
-    description:
-      "In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.",
-  },
-  {
-    title: "Heat the pan",
-    description:
-      "Place a non-stick frying pan over medium heat and add butter or oil.",
-  },
-  {
-    title: "Cook the omelette",
-    description:
-      "Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.",
-  },
-  {
-    title: "Add fillings (optional)",
-    description:
-      "When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.",
-  },
-  {
-    title: "Fold and serve",
-    description:
-      "As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.",
-  },
-  {
-    title: "Enjoy",
-    description: "Serve hot, with additional salt and pepper if needed.",
-  },
-];
-
-const table = [
-  {
-    tag: "Calories",
-    value: "277kcal",
-  },
-  {
-    tag: "Carbs",
-    value: "0g",
-  },
-  {
-    tag: "Protein",
-    value: "20g",
-  },
-  {
-    tag: "Fat",
-    value: "22g",
-  },
-];
-
+import {
+  preparation,
+  ingredients,
+  instructions,
+  table,
+} from "../../../data/data.json";
 function Card() {
   return (
-    <main className="bg-[var(--card-bg)] max-w-[700px] rounded-2xl">
-      <div className="md:pt-6 md:px-6">
-        <CardPicture img={"/images/image-omelette.jpeg"} />
-      </div>
-      <div className="px-6 pb-6">
+    <main className="bg-[var(--card-bg)] max-w-[700px] rounded-2xl md:my-20">
+      <CardPicture img={"/images/image-omelette.jpeg"} />
+      <article className="px-6 pb-6">
         <h1 className="text-[2rem] py-2 text-[var(--title-color)]">
           Simple Omelette Recipe
         </h1>
@@ -111,7 +38,7 @@ function Card() {
           }
           content={table}
         />
-      </div>
+      </article>
     </main>
   );
 }
